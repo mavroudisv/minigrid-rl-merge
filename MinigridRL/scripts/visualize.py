@@ -22,6 +22,8 @@ parser.add_argument("--argmax", action="store_true", default=False,
                     help="select the action with highest probability")
 parser.add_argument("--pause", type=float, default=0.1,
                     help="pause duration between two consequent actions of the agent")
+parser.add_argument("--gif", type=str, default="minigrid.gif",
+                    help="store output as gif with the given filename (default: minigrid.gif)")
 args = parser.parse_args()
 
 # Set seed for all randomness sources
